@@ -149,15 +149,6 @@ h1 em{font-style:italic;color:var(--accent)}
 .prose{max-width:62ch;color:var(--ink-2);font-size:1.03rem}
 .prose + .prose{margin-top:16px}
 
-/* ---------- semester timeline (numbered because the order is real) ---------- */
-.phases{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
-.phase{padding:22px 22px 30px 0;border-right:1px solid var(--line-soft);position:relative}
-.phase:last-child{border-right:0}
-.phase:not(:first-child){padding-left:22px}
-.phase::before{content:"";position:absolute;top:-1px;left:0;width:34%;height:2px;background:var(--accent)}
-.phase .wk{color:var(--accent);font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.08em}
-.phase h3{font-size:1.16rem;margin:12px 0 8px}
-.phase p{font-size:.92rem;color:var(--ink-2);line-height:1.55}
 
 /* ---------- featured cards ---------- */
 .feat{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
@@ -230,8 +221,6 @@ footer{border-top:1px solid var(--line);margin-top:clamp(56px,8vw,96px);padding-
 
 @media (max-width:900px){
   .feat{grid-template-columns:1fr 1fr}
-  .phases{grid-template-columns:1fr 1fr}
-  .phase{border-bottom:1px solid var(--line-soft)}
   .recruit{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr 1fr}
   .row{grid-template-columns:44px minmax(0,1fr);row-gap:10px}
@@ -244,8 +233,6 @@ footer{border-top:1px solid var(--line);margin-top:clamp(56px,8vw,96px);padding-
   .stats{grid-template-columns:1fr}
   .stat{border-left:0!important;padding-left:0!important;border-top:1px solid var(--line-soft)}
   .stat:first-child{border-top:0}
-  .phases{grid-template-columns:1fr}
-  .phase{padding-left:0!important;border-right:0}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.001ms!important;transition-duration:.001ms!important}
