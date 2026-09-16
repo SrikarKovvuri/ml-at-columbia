@@ -199,16 +199,36 @@ footer{border-top:1px solid var(--line);margin-top:clamp(56px,8vw,96px);padding-
 .colophon{margin-top:44px;padding-top:22px;border-top:1px solid var(--line-soft);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--ink-3);font-size:12.5px}
 .colophon p{max-width:58ch;line-height:1.5}
 
-@media (max-width:900px){
+@media (max-width:1000px){
   .feat{grid-template-columns:1fr 1fr}
-  .foot-grid{grid-template-columns:1fr 1fr}
-  .row{grid-template-columns:44px minmax(0,1fr);row-gap:10px}
+}
+@media (max-width:900px){
+  .foot-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .row{grid-template-columns:44px minmax(0,1fr);gap:16px;row-gap:10px}
+  .row .thumb{width:44px;height:44px}
   .row .ds{grid-column:2}
   .row .meta{grid-column:2;align-items:flex-start;flex-direction:row;flex-wrap:wrap}
 }
 @media (max-width:620px){
-  .nav-links .hide-s{display:none}
   .feat{grid-template-columns:1fr}
+  .nav-in{height:56px;gap:12px}
+  .nav-links{gap:2px}
+  .nav-links a{padding:7px 9px;font-size:13.5px}
+  .brand b{font-size:14px}
+  .sec{padding-block:clamp(44px,9vw,64px)}
+  .sec-head{margin-bottom:28px}
+  .group-label{flex-wrap:wrap;gap:8px 14px}
+  .group{margin-top:34px}
+  .colophon{flex-direction:column;gap:12px}
+}
+@media (max-width:460px){
+  .foot-grid{grid-template-columns:1fr;gap:26px}
+  .foot-blurb{max-width:none}
+  .cta-row{flex-direction:column;align-items:stretch}
+  .cta-row .btn{justify-content:center}
+  .row{grid-template-columns:40px minmax(0,1fr);gap:14px;padding:14px 0}
+  .row .thumb{width:40px;height:40px}
+  .filters button{padding:6px 11px;font-size:12.5px}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.001ms!important;transition-duration:.001ms!important}
@@ -219,3 +239,8 @@ footer{border-top:1px solid var(--line);margin-top:clamp(56px,8vw,96px);padding-
 .card .body .org{margin-bottom:-5px}
 .row .nm .org{margin-top:5px}
 .row .nm{align-self:start}
+
+/* nothing may scroll the page horizontally */
+.nm,.ds,.org,.tag{overflow-wrap:break-word}
+.row{min-width:0}
+.row > *{min-width:0}

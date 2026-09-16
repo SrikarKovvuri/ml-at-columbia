@@ -3,7 +3,7 @@
 window.PROJECTS = [
   { n:"Online Reindexing for OpenSearch", group:"Agents &amp; Infrastructure", org:"With a big tech company",
     k:"graph", seed:17, feat:true,
-    t:"Reindexing infrastructure for OpenSearch clusters running large vector search and inverted index workloads, so embedding models, analyzers and index configurations can change without downtime. Built on idempotent operations, parallel workers and concurrent reads and writes during migration, with background re-embedding, validation, dual writes and cutover across tens of millions of documents.",
+    t:"Zero-downtime reindexing for OpenSearch clusters running vector search and inverted index workloads. Idempotent operations, parallel workers, and concurrent reads and writes across tens of millions of documents.",
     tags:["OpenSearch","Vector search","Inverted index","Idempotency","Parallel workers"] },
 
   { n:"Autoresearch Agent", group:"Agents &amp; Infrastructure", org:"With a big tech company",
