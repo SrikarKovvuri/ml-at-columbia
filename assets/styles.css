@@ -1,4 +1,4 @@
-/* ML @ Columbia — design tokens
+/* ML @ Columbia design tokens
    paper/ink are cool neutrals biased toward the accent; Columbia blue is the wash. */
 :root{
   --paper:#EEF2F7;
@@ -132,13 +132,6 @@ h1 em{font-style:italic;color:var(--accent)}
 .lede{margin-top:26px;max-width:56ch;font-size:clamp(1.02rem,1.5vw,1.16rem);color:var(--ink-2);line-height:1.62}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 
-/* ---------- stats ---------- */
-.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.stat{padding:26px 4px 28px}
-.stat + .stat{border-left:1px solid var(--line-soft);padding-left:24px}
-.stat .n{font-family:Newsreader,Georgia,serif;font-size:clamp(2rem,4.6vw,3.1rem);line-height:1;font-weight:300;font-variant-numeric:tabular-nums}
-.stat .l{color:var(--ink-3);margin-top:10px}
-
 /* ---------- sections ---------- */
 .sec{padding-block:clamp(56px,8vw,92px)}
 .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:38px}
@@ -194,23 +187,10 @@ h1 em{font-style:italic;color:var(--accent)}
 .row .ds{color:var(--ink-2);font-size:.93rem;line-height:1.5}
 .row .meta{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
 
-/* ---------- recruiting ---------- */
-.recruit{
-  background:var(--surface);border:1px solid var(--line-soft);border-left:3px solid var(--accent);
-  border-radius:4px;padding:clamp(26px,4vw,40px);
-  display:grid;grid-template-columns:1.25fr 1fr;gap:34px;align-items:center;
-}
-.recruit h2{font-size:clamp(1.5rem,2.6vw,2rem)}
-.recruit p{color:var(--ink-2);margin-top:12px;max-width:46ch}
-.dates{display:flex;flex-direction:column;gap:2px}
-.dates div{display:flex;justify-content:space-between;gap:18px;padding:11px 0;border-bottom:1px solid var(--line-soft);font-size:.92rem}
-.dates div:last-child{border-bottom:0}
-.dates b{font-weight:500}
-.dates span{color:var(--ink-3);font-family:"JetBrains Mono",monospace;font-size:12px}
 
 /* ---------- footer ---------- */
 footer{border-top:1px solid var(--line);margin-top:clamp(56px,8vw,96px);padding-block:52px 40px}
-.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:34px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px}
 .foot-grid h4{margin:0 0 14px;color:var(--ink-3);font-weight:400;font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-family:"JetBrains Mono",monospace}
 .foot-grid ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
 .foot-grid a{color:var(--ink-2);text-decoration:none;font-size:14px}
@@ -221,7 +201,6 @@ footer{border-top:1px solid var(--line);margin-top:clamp(56px,8vw,96px);padding-
 
 @media (max-width:900px){
   .feat{grid-template-columns:1fr 1fr}
-  .recruit{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr 1fr}
   .row{grid-template-columns:44px minmax(0,1fr);row-gap:10px}
   .row .ds{grid-column:2}
@@ -230,15 +209,12 @@ footer{border-top:1px solid var(--line);margin-top:clamp(56px,8vw,96px);padding-
 @media (max-width:620px){
   .nav-links .hide-s{display:none}
   .feat{grid-template-columns:1fr}
-  .stats{grid-template-columns:1fr}
-  .stat{border-left:0!important;padding-left:0!important;border-top:1px solid var(--line-soft)}
-  .stat:first-child{border-top:0}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.001ms!important;transition-duration:.001ms!important}
 }
 
-/* partner / provenance line — sits above the title on cards, under it in the index */
+/* partner / provenance line: above the title on cards, under it in the index */
 .org{display:block;color:var(--ink-3);font-size:10.5px;letter-spacing:.09em;line-height:1.4}
 .card .body .org{margin-bottom:-5px}
 .row .nm .org{margin-top:5px}

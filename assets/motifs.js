@@ -1,4 +1,4 @@
-/* Generated project artwork. No stock photos, no faces — every project gets a
+/* Generated project artwork. No stock photos, no faces. Every project gets a
    deterministic little plot drawn from its seed, inheriting the theme accent
    through currentColor. */
 (function(){
