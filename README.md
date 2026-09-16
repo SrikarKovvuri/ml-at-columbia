@@ -31,8 +31,9 @@ vercel --prod # production
 Append an entry to `assets/data.js`. Both pages read from it.
 
 ```js
-{ n:"Name", sem:"Spring 2027", k:"curve", seed:42, feat:true,
-  t:"One sentence on what it does.",
+{ n:"Name", group:"Applied ML", org:"With a fintech startup",
+  k:"curve", seed:42, feat:true,
+  t:"A sentence or two on what it does.",
   tags:["PyTorch","Modal"] }
 ```
 
@@ -40,10 +41,11 @@ Append an entry to `assets/data.js`. Both pages read from it.
   `scatter` (embedding), `grid` (segmentation mask), `graph` (k-NN).
 - `seed` makes that artwork deterministic — change it to reroll.
 - `feat: true` puts it in the three-up row on the home page.
-- New `sem` values create a new group and a new filter chip automatically.
+- New `group` values create a new section and a new filter chip automatically.
+- `org` is the provenance line. Keep partners generic — "a big tech company", not the logo.
 
 ## Placeholders to replace
 
 - `hello@mlatcolumbia.org` — the contact address, in both pages' nav, CTAs and footer.
 - Footer GitHub and Instagram links currently point at the bare sites.
-- Stats on the home page (14 / 41 / 7) and the recruitment dates.
+- Stats on the home page (10 / 41 / 7) and the recruitment dates.

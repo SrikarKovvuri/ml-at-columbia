@@ -250,3 +250,9 @@ footer{border-top:1px solid var(--line);margin-top:clamp(56px,8vw,96px);padding-
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.001ms!important;transition-duration:.001ms!important}
 }
+
+/* partner / provenance line — sits above the title on cards, under it in the index */
+.org{display:block;color:var(--ink-3);font-size:10.5px;letter-spacing:.09em;line-height:1.4}
+.card .body .org{margin-bottom:-5px}
+.row .nm .org{margin-top:5px}
+.row .nm{align-self:start}

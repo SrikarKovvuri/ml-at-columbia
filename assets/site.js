@@ -15,7 +15,8 @@
     feat.innerHTML = P.filter(function(p){ return p.feat; }).map(function(p){
       return '<a class="card" href="/projects">' +
         '<span class="art">' + motif(p.k, p.seed, false) + '</span>' +
-        '<span class="body"><h3>' + p.n + '</h3><p>' + p.t + '</p>' + tagHTML(p) + '</span></a>';
+        '<span class="body"><span class="org mono">' + p.org + '</span>' +
+        '<h3>' + p.n + '</h3><p>' + p.t + '</p>' + tagHTML(p) + '</span></a>';
     }).join("");
   }
 
@@ -23,7 +24,7 @@
   var filters = document.getElementById("filters"), groups = document.getElementById("groups");
   if (filters && groups){
     var sems = [];
-    P.forEach(function(p){ if (sems.indexOf(p.sem) < 0) sems.push(p.sem); });
+    P.forEach(function(p){ if (sems.indexOf(p.group) < 0) sems.push(p.group); });
     var active = "All";
 
     function renderFilters(){
@@ -33,14 +34,13 @@
     }
     function renderGroups(){
       groups.innerHTML = sems.filter(function(s){ return active === "All" || active === s; }).map(function(sem){
-        var items = P.filter(function(p){ return p.sem === sem; });
+        var items = P.filter(function(p){ return p.group === sem; });
         return '<section class="group"><div class="group-label mono"><span class="dot"></span>' + sem +
-          (sem === "Fall 2026" ? " &mdash; in progress" : "") +
           '<span class="count">' + items.length + " project" + (items.length > 1 ? "s" : "") + '</span></div>' +
           '<div class="rows">' + items.map(function(p){
             return '<div class="row">' +
               '<span class="thumb">' + motif(p.k, p.seed, true) + '</span>' +
-              '<span class="nm">' + p.n + '</span>' +
+              '<span class="nm">' + p.n + '<span class="org mono">' + p.org + '</span></span>' +
               '<span class="ds">' + p.t + '</span>' +
               '<span class="meta">' + tagHTML(p) + '</span></div>';
           }).join("") + '</div></section>';
