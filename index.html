@@ -7,9 +7,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css?v=20260917-7">
 <title>ML @ Columbia</title>
-<meta name="description" content="An undergraduate machine learning club at Columbia University. We teach machine learning and build projects in agent infrastructure, reliability research and applied ML.">
+<meta name="description" content="Columbia's first machine learning club. Learn ML from the fundamentals up, then put it to work on projects with fellow students and industry partners.">
 <meta property="og:title" content="ML @ Columbia">
 <meta property="og:description" content="Learn machine learning. Build real projects.">
 <meta property="og:type" content="website">
@@ -32,39 +32,95 @@
     </a>
     <div class="nav-links">
       <a href="/" aria-current="page">Home</a>
-      <a href="/projects">Projects</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/#placements">Placements</a>
+      <a href="/#work-with-us">Work With Us</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1aAeXdTemcPGU65a6ZfZLP3_ISOKGMa5ZBSBKh-L8s23Fig/viewform?usp=dialog">Join Us</a>
     </div>
   </div>
 </nav>
 <main id="main">
   <section class="hero">
-    <canvas id="emb" aria-hidden="true"></canvas>
+    <canvas id="emb" role="button" tabindex="0" aria-label="Add a point and classify it using nearby examples. Click, or press Enter or Space."></canvas>
     <div class="wrap">
-      <div class="eyebrow mono">Columbia University <i>&middot;</i> New York</div>
-      <h1>Learn machine learning. Build <em>real projects</em>.</h1>
-      <p class="lede">ML @ Columbia is an undergraduate club. We teach machine learning from the fundamentals up, and we work on projects that are genuinely interesting: agent infrastructure, reliability research, and applied ML.</p>
+      <h1>Machine Learning<br><em>@ Columbia</em></h1>
+      <p class="lede">Columbia's first machine learning club. We teach ML from the fundamentals up, then put it to work on projects with fellow students and industry partners.</p>
       <div class="cta-row">
-        <a class="btn btn-solid" href="/projects">See the projects <span class="arw" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-solid" href="/projects.html">See our projects <span class="arw" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSe1aAeXdTemcPGU65a6ZfZLP3_ISOKGMa5ZBSBKh-L8s23Fig/viewform?usp=dialog">Join us <span class="arw" aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
   </section>
 
-  <section class="sec wrap" id="about">
+  <section class="sec wrap about-layout" id="about">
     <div class="sec-head">
       <h2>What we do</h2>
-      <span class="sec-kicker mono">About</span>
     </div>
-    <p class="prose">Two things, in parallel. We teach machine learning properly, starting from fundamentals and working up through current practice, so that someone who has never trained a model can follow. And we build, on projects with real users, real datasets, and real constraints.</p>
-    <p class="prose">Members come from Columbia College, SEAS, Barnard and GS. No prior research experience is expected. Teams stay small so that everyone writes code rather than watching someone else write it.</p>
+    <div class="about-copy">
+    <p class="prose">Our education program takes students from no ML experience to building and deploying production ML systems. Through workshops and hands-on projects, students learn the fundamentals, train and evaluate models, and build the pipelines and infrastructure needed to run them. Along the way, they work in small teams on student ideas and projects with industry partners.</p>
+    <p class="prose">Open to undergraduate and graduate students across Columbia, including Columbia College, SEAS, Barnard, and GS. No prior ML experience needed.</p>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="placements" aria-labelledby="placements-title">
+    <div class="sec-head">
+      <h2 id="placements-title">2026 Summer Placements</h2>
+    </div>
+    <ul class="placements-list">
+      <li><img class="placement-wordmark" src="https://upload.wikimedia.org/wikipedia/commons/a/af/OpenAI_logo_2025_%28wordmark%29.svg" alt="OpenAI" width="160" height="64" loading="lazy"></li>
+      <li><img class="placement-wordmark" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Optiver_Logo.svg" alt="Optiver" width="160" height="64" loading="lazy"></li>
+      <li><img class="placement-wordmark" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" width="160" height="64" loading="lazy"></li>
+      <li><img class="placement-wordmark" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" width="160" height="64" loading="lazy"></li>
+      <li><img class="placement-wordmark" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" alt="Stripe" width="160" height="64" loading="lazy"></li>
+      <li><img class="placement-wordmark" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/datadog/datadog-original-wordmark.svg" alt="Datadog" width="160" height="64" loading="lazy"></li>
+      <li><img class="placement-wordmark" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Pinterest_Logo_%282%29.svg" alt="Pinterest" width="160" height="64" loading="lazy"></li>
+      <li><img class="placement-wordmark" src="https://upload.wikimedia.org/wikipedia/commons/9/93/NASA_Worm_logo_%28PMS_185%29.svg" alt="NASA" width="160" height="64" loading="lazy"></li>
+    </ul>
   </section>
 
   <section class="sec wrap" id="recent">
     <div class="sec-head">
       <h2>Selected projects</h2>
-      <a href="/projects">All projects <span aria-hidden="true">&rarr;</span></a>
+      <a href="/projects.html">All projects <span aria-hidden="true">&rarr;</span></a>
     </div>
     <div class="feat" id="feat"></div>
   </section>
+
+  <section class="sec wrap" id="join-us" aria-labelledby="join-title">
+    <div class="join-panel">
+      <span class="sec-kicker mono">For students</span>
+      <h2 id="join-title">Join ML @ Columbia</h2>
+      <p class="prose">Join ML @ Columbia to learn the foundations, find your community, and build something you care about. No prior experience needed.</p>
+      <a class="btn btn-solid" href="https://docs.google.com/forms/d/e/1FAIpQLSe1aAeXdTemcPGU65a6ZfZLP3_ISOKGMa5ZBSBKh-L8s23Fig/viewform?usp=dialog">Interest form <span class="arw" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="work-with-us" aria-labelledby="work-title">
+    <div class="sec-head">
+      <h2 id="work-title">Work with us</h2>
+      <span class="sec-kicker mono">For companies</span>
+    </div>
+    <p class="prose">Bring us a problem worth exploring. We connect companies with Columbia students who want to turn machine learning ideas into working tools.</p>
+    <div class="partnership-grid">
+      <article>
+        <h3>Build with a student team</h3>
+        <p>Collaborate on an ML project, from defining the question and testing ideas to building a prototype and sharing the results.</p>
+      </article>
+      <article>
+        <h3>Connect with top talent</h3>
+        <p>Meet undergraduate and graduate students building ML systems at Columbia. Connect with potential interns and new hires through technical events, project collaborations, and recruiting opportunities.</p>
+      </article>
+      <article>
+        <h3>Support the next generation</h3>
+        <p>Help students learn and experiment through sponsorship, mentorship, or access to tools and compute.</p>
+      </article>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="mailto:ap4672@columbia.edu?subject=Industry%20partnership">Start a conversation <span class="arw" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+
+
 </main>
 <footer>
   <div class="wrap">
@@ -78,22 +134,23 @@
           </svg>
           <b>ML <span>@</span> Columbia</b>
         </a>
-        <p class="foot-blurb">An undergraduate machine learning club at Columbia University, New York.</p>
+        <p class="foot-blurb">A machine learning club at Columbia University, New York.</p>
       </div>
       <div>
         <h4>Site</h4>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/#about">What we do</a></li>
-          <li><a href="/projects">Projects</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/#placements">Summer placements</a></li>
+          <li><a href="/#work-with-us">Work with us</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe1aAeXdTemcPGU65a6ZfZLP3_ISOKGMa5ZBSBKh-L8s23Fig/viewform?usp=dialog">Join us</a></li>
         </ul>
       </div>
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:hello@mlatcolumbia.org">hello@mlatcolumbia.org</a></li>
-          <li><a href="https://github.com">GitHub</a></li>
-          <li><a href="https://instagram.com">Instagram</a></li>
+          <li><a href="mailto:ap4672@columbia.edu">ap4672@columbia.edu</a></li>
         </ul>
       </div>
     </div>
@@ -103,8 +160,8 @@
     </div>
   </div>
 </footer>
-<script src="/assets/data.js"></script>
+<script src="/assets/data.js?v=20260917-7"></script>
 <script src="/assets/motifs.js"></script>
-<script src="/assets/site.js"></script>
+<script src="/assets/site.js?v=20260917-7"></script>
 </body>
 </html>
