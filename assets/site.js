@@ -13,10 +13,10 @@
   var feat = document.getElementById("feat");
   if (feat){
     feat.innerHTML = P.filter(function(p){ return p.feat; }).map(function(p){
-      return '<a class="card" href="/projects.html">' +
+      return '<article class="card">' +
         '<span class="art">' + (p.art ? '<img src="/assets/' + p.art + '.svg" alt="" loading="lazy">' : motif(p.k, p.seed, false)) + '</span>' +
         '<span class="body"><span class="org mono">' + p.org + '</span>' +
-        '<h3>' + p.n + '</h3><p>' + p.t + '</p>' + tagHTML(p) + '</span></a>';
+        '<h3>' + p.n + '</h3><p>' + p.t + '</p>' + tagHTML(p) + '</span></article>';
     }).join("");
   }
 
