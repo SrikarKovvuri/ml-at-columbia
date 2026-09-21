@@ -293,3 +293,17 @@ footer{border-top:1px solid var(--line);margin-top:clamp(56px,8vw,96px);padding-
 .about-copy .prose{max-width:none}
 .about-copy .prose + .prose{margin-top:24px}
 @media(max-width:620px){.about-layout{grid-template-columns:1fr;gap:24px}}
+
+.recruitment-note{margin-top:22px;color:var(--ink-2);font-size:.9rem;max-width:56ch}
+.recruitment-note a{color:var(--accent);text-underline-offset:3px}
+.info-session{width:100%;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.info-session h3,.join-option h3{font-size:1.45rem;margin-bottom:10px}
+.info-session p{color:var(--ink-2);font-size:.95rem}
+.info-session p+p{margin-top:8px}
+.join-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px;width:100%}
+.join-option{display:flex;flex-direction:column;align-items:flex-start;gap:14px;min-width:0}
+.join-option h3{margin:0}
+.join-option p{color:var(--ink-2);font-size:.95rem}
+.join-option .application-deadline{font-size:.85rem}
+.join-option .btn{margin-top:auto}
+@media(max-width:620px){.join-options{grid-template-columns:1fr;gap:28px}.join-option+.join-option{padding-top:24px;border-top:1px solid var(--line)}}
